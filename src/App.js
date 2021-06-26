@@ -9,7 +9,7 @@ function App() {
  
 }
 
-// class
+// class component
 
 /*
 import react from 'react'
@@ -23,4 +23,5 @@ class App extends react.Component {
   }
 }
 */
+
 export default App;
