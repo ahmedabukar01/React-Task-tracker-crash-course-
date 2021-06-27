@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 const Header = ({title})=>{
     return (
         <header>
@@ -7,7 +8,16 @@ const Header = ({title})=>{
 
 }
 Header.defaultProps = {
-    title:'Welcome to my first react app',
+    title:'Task Tracker',
 }
+
+Header.propTypes = {
+    title: PropTypes.string.isRequired
+}
+// css in js 
+// const headerStyling = {
+//     background:'red',
+//     color:'white',
+// }
 
 export default Header
