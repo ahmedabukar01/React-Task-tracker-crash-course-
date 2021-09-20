@@ -1,26 +1,35 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Buttons from './Buttons'
 
-const Header = ({name,title})=>{
+
+const Header = ({title})=>{
+   const onClick = (e)=>{
+       console.log(e)
+   }
+
     return(
-        <div>
-            <h1 style={myStyle}>hey its me man! {name}{title}</h1>
-        </div>
+        <header className="header">
+           <h1>{title}</h1>
+           <Buttons text="Add" color="green" onClick={onClick}/>
+        </header>
     )
 }
 
 Header.defaultProps = {
-    title: 'the comeback history',
+    title: 'Task Tracker',
 }
 Header.propTypes = {
     title: PropTypes.string.isRequired
 }
 
         // CSS IN JS
-        const myStyle = {
-            color: 'red',
-            background: 'blue',
-        }
+        // const myStyle = {
+        //     color: 'red',
+        //     background: 'blue',
+        // }
+
+        
         // class
 // class Header extends React.Component{
 //     render(){
