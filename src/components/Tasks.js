@@ -1,10 +1,11 @@
+import Task from './Task'
 
-const Tasks = ({tasks}) => {
+const Tasks = ({tasks,deleteTask}) => {
     return (
         <>
-           {tasks.map(task=>(
-               <h3 key={task.id}>{task.text}</h3>
-           ))}
+           {tasks.length > 0 ? tasks.map(task=>(
+               <Task key={task.id} task={task} onDelete={deleteTask}/>
+           )): 'no Tasks to show'}
         </>
     )
 }
