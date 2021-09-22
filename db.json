@@ -1,0 +1,30 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "text": "playing football",
+      "day":"feb 5th at 1:30'",
+      "reminder": true
+  },
+  {
+      "id": 2,
+      "text": "cleaning house",
+      "day":"jan 8th at 8:15",
+      "reminder": false
+  },
+    {
+      "id": 3,
+      "text": "coding all the day",
+      "day":"oct 10th at 12:30'",
+      "reminder": true
+  },
+  {
+      "id": 4,
+      "text": "project planning",
+      "day":"feb 5th at 4:20",
+      "reminder": false
+  }
+  ]
+
+}
+ 
